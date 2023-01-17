@@ -1,112 +1,60 @@
 <!DOCTYPE html>
 <html>
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #121212;
-  color: #ffffff;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #1b1b1b;
-}
-
-h1 {
-  font-size: 32px;
-  margin: 0;
-}
-
-nav {
-  display: flex;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin: 0 10px;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-h2 {
-  font-size: 24px;
-  margin: 0 0 20px 0;
-}
-
-img {
-  width: 300px;
-}
-
-p {
-  font-size: 16px;
-  margin: 20px 0;
-  text-align: center;
-}
-
-a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #000000;
-  color: #ffffff;
-  border-radius: 5px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: #1b1b1b;
-}
-
-p {
-  font-size: 14px;
-  </style>
-
 <head>
-  <meta charset="utf-8">
-  <title>Game Website</title>
-  <link rel="stylesheet" href="style.css">
+  <title>My Game Artist Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
   <header>
-    <h1>Game Website</h1>
+    <h1>My Game Artist Portfolio</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Games</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <h2>Featured Game: Hellblade</h2>
-    <img src="C:\Users\annya\Pictures\ssasdasd.png" alt="Hellblade cover art">
-    <p>Hellblade is an action-adventure game developed by Ninja Theory. It follows the journey of Senua, a Celtic warrior struggling with psychosis, as she embarks on a quest to the Norse underworld.</p>
-    <a href="#">Learn More</a>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, magna ut molestie malesuada, ligula odio dictum augue, at tincidunt massa ipsum at ipsum. Sed a justo id risus porta vestibulum. Sed at metus euismod, dictum augue vel, dictum augue vel, dictum augue vel, dictum augue vel, dictum augue vel.</p>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <ul>
+        <li>
+          <h3>Character Design</h3>
+          <img src="character1.jpg" alt="Character Design">
+          <img src="character2.jpg" alt="Character Design">
+        </li>
+        <li>
+          <h3>Environment Design</h3>
+          <img src="environment1.jpg" alt="Environment Design">
+          <img src="environment2.jpg" alt="Environment Design">
+        </li>
+        <li>
+          <h3>Prop Design</h3>
+          <img src="prop1.jpg" alt="Prop Design">
+          <img src="prop2.jpg" alt="Prop Design">
+        </li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br>
+        <input type="submit" value="Send">
+      </form>
+    </section>
   </main>
   <footer>
-    <p>Copyright 2021 Game Website</p>
+    <p>Copyright © My Game Artist Portfolio</p>
   </footer>
 </body>
 </html>
